@@ -1,0 +1,139 @@
+/* ----------Start---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+.container {
+  min-height: 100vh;
+  background: rgba(10, 10, 10, 0.7)
+    url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+  background-size: cover;
+  backdrop-filter: blur(100px);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+/* ----------Navbar---------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+.navbar div:nth-child(1) {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 90%;
+}
+.navbar div:nth-child(2) {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.list-item {
+  font-size: 1.2rem;
+  color: #fffb00;
+  cursor: pointer;
+}
+.navbar div:nth-child(3) {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-small {
+  padding: 2% 10%;
+  background-color: #FF505F;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ----------Hero---------- */
+.hero {
+  padding: 5%;
+  height: 80%;
+}
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #fffb00;
+  font-family: "Dela Gothic One", cursive;
+  line-height: normal;
+}
+
+.button-large {
+  padding: 1% 3%;
+  background-color: #FF505F;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5%;
+  cursor: pointer;
+}
+.bottom {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+/* ----------Media Query---------- */
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar div:nth-child(1) {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar div:nth-child(2) {
+    width: 100%;
+    padding: 2%;
+  }
+  .navbar div:nth-child(3) {
+    width: 100%;
+    padding: 2%;
+  }
+  html {
+    font-size: 85%;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 58%;
+  }
+}
+/* ----------End---------- */
